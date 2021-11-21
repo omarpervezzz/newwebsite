@@ -1,0 +1,1873 @@
+@import url("./font.css");
+* {
+	margin: 0px;
+	padding: 0px;
+	color: rgb(242, 245, 247);
+	letter-spacing: 1px;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	text-rendering: optimizelegibility;
+	overflow-x: hidden;
+	font-family: changa;
+	background: rgb(10, 9, 9);
+}
+
+body::-webkit-scrollbar {
+	width: 14px;
+	height: 40px;
+}
+
+body::-webkit-scrollbar-track {
+	background-color: #0c0d0e;
+	background-image: linear-gradient( #2663D1);
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: #2663D1;
+	border-radius: 10px;
+	border: 3px solid #1b2137;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+
+/* 
+---------------------------------------------
+global styles
+--------------------------------------------- 
+*/
+
+h2 {
+	color: #fff;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 0rem;
+	font-size: 3.6rem;
+}
+
+h2::after {
+	content: "";
+	display: block;
+	width: 20rem;
+	height: .2rem;
+	background: #2663D1;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1rem;
+}
+
+h3 {
+	color: #fff;
+}
+
+
+/* global btn */
+
+.global_btn {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 15.9rem;
+	height: 3.8rem;
+	font-weight: 200;
+	background: linear-gradient(to right, rgba(39, 68, 235, 0.733), rgba(71, 83, 255, 0.753), rgb(40, 70, 235), rgb(39, 70, 235)) 0% 0% / 600% 600%;
+	border: 1px solid transparent;
+	color: white;
+	box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+	border-radius: 3rem;
+	margin: 0px;
+	animation: 30s linear 0s infinite normal none running gradient;
+	-webkit-animation: 30s linear 0s infinite normal none running gradient;
+	background: #000;
+}
+
+.global_btn:hover {
+	background: linear-gradient(to right, cornflowerblue, aqua, deeppink, cornflowerblue) 0% 0% / 600% 600%;
+	animation: 20s linear 0s infinite normal none running gradient;
+	font-weight: 400;
+	filter: drop-shadow(cornflowerblue 0px 0px 30px);
+	-webkit-animation: 20s linear 0s infinite normal none running gradient;
+}
+
+.global_btn::before {
+	background-color: transparent !important;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	100% {
+		background-position: 600% 50%;
+	}
+}
+
+.cydog_apps_img {
+	width: 40rem;
+}
+
+.waves {
+	position: absolute;
+	width: 100%;
+	height: 12rem;
+}
+
+.buttons-container {
+	display: flex;
+	justify-content: center;
+}
+
+.buttons-container .banner_btn_download {
+	width: 35rem;
+	height: 6rem;
+	position: relative;
+	border: none;
+	outline: none;
+	margin: 3rem 3rem 0 0;
+}
+
+.buttons-container a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.buttons-container .banner_btn_download:hover {
+	background-color: transparent !important;
+}
+
+.buttons-container .banner_btn_download {
+	text-decoration: none;
+	font-size: 1.6rem;
+	color: #fff;
+}
+
+.buttons-container .banner_btn_download .fa-download {
+	position: absolute;
+	right: 2rem;
+	font-size: 2rem;
+}
+
+
+/* 
+---------------------------------------------
+global styles
+--------------------------------------------- 
+*/
+
+
+/* 
+---------------------------------------------
+header  styles
+--------------------------------------------- 
+*/
+
+nav {
+	position: fixed;
+	height: 8rem;
+	width: 100vw;
+	background-color: rgb(25 25 28 / 78%);
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 20px;
+	/*box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 20px;
+    */
+	display: flex;
+	z-index: 10;
+	transition: 0.2s all;
+	-webkit-transition: 0.2s all;
+	-moz-transition: 0.2s all;
+	-ms-transition: 0.2s all;
+	-o-transition: 0.2s all;
+}
+
+.nav_bg_adder {
+	background-color: #2663D1;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 20px;
+}
+
+nav .logo_link {
+	text-decoration: none;
+}
+
+.logo {
+	padding: 1vh 1vw;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+}
+
+.logo img {
+	height: 5rem;
+	width: 5rem;
+	margin-top: 1.3rem;
+}
+
+.logo .logo_text {
+	font-weight: 400;
+	display: flex;
+	align-items: center;
+	font-size: 2rem;
+	margin-top: 2rem;
+	width: 14rem;
+}
+
+.nav-links {
+	display: flex;
+	list-style: none;
+	width: 88vw;
+	padding: 0px 0.7vw;
+	justify-content: flex-end;
+	align-items: center;
+	text-transform: uppercase;
+	margin-top: 1.2rem;
+}
+
+.nav-links li a {
+	text-decoration: none;
+	margin: 0px 0.7vw;
+	color: rgb(237, 237, 237);
+	font-size: 1.3rem;
+	font-weight: 500;
+	letter-spacing: 0.1rem;
+}
+
+.nav-links li {
+	position: relative;
+	margin-left: 1rem;
+}
+
+.nav-links li a::before {
+	content: "";
+	display: block;
+	height: 0.3rem;
+	width: 0%;
+	background-color: rgb(39, 70, 235);
+	position: absolute;
+	margin: -4px 0px 0px 10%;
+	transition: all 250ms ease-in-out 0s;
+	-webkit-transition: all 250ms ease-in-out 0s;
+	-moz-transition: all 250ms ease-in-out 0s;
+	-ms-transition: all 250ms ease-in-out 0s;
+	-o-transition: all 250ms ease-in-out 0s;
+}
+
+.nav-links li a:hover::before {
+	width: 80%;
+}
+
+.nav-links li.download_item a::before {
+	background-color: transparent;
+}
+
+.hamburger div {
+	width: 3rem;
+	height: 0.3rem;
+	background: rgb(242, 245, 247);
+	margin: 0.5rem;
+	transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-ms-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+}
+
+.hamburger {
+	display: none;
+}
+
+@media screen and (max-width: 1024px) {
+	nav {
+		position: fixed;
+		z-index: 3;
+	}
+	.hamburger {
+		display: block;
+		position: absolute;
+		cursor: pointer;
+		right: 5%;
+		top: 50%;
+		z-index: 2;
+		transition: all 0.7s ease 0s;
+		transform: translate(-5%, -50%);
+		-webkit-transform: translate(-5%, -50%);
+		-moz-transform: translate(-5%, -50%);
+		-ms-transform: translate(-5%, -50%);
+		-o-transform: translate(-5%, -50%);
+		-webkit-transition: all 0.7s ease 0s;
+		-moz-transition: all 0.7s ease 0s;
+		-ms-transition: all 0.7s ease 0s;
+		-o-transition: all 0.7s ease 0s;
+	}
+	.nav-links {
+		position: fixed;
+		top: -2rem;
+		background: rgb(19, 20, 24);
+		/* background: #2663D1; */
+		height: 100vh;
+		width: 100%;
+		flex-direction: column;
+		clip-path: circle(50px at 90% -10%);
+		pointer-events: none;
+		justify-content: center;
+		transition: all 1s ease-out 0s;
+		-webkit-transition: all 1s ease-out 0s;
+		-moz-transition: all 1s ease-out 0s;
+		-ms-transition: all 1s ease-out 0s;
+		-o-transition: all 1s ease-out 0s;
+	}
+	.nav-links.open {
+		clip-path: circle(1000px at 90% -10%);
+		pointer-events: all;
+	}
+	.nav-links li {
+		opacity: 0;
+	}
+	.nav-links li:nth-child(1) {
+		transition: all 0.5s ease 0.2s;
+		-webkit-transition: all 0.5s ease 0.2s;
+		-moz-transition: all 0.5s ease 0.2s;
+		-ms-transition: all 0.5s ease 0.2s;
+		-o-transition: all 0.5s ease 0.2s;
+	}
+	.nav-links li:nth-child(2) {
+		transition: all 0.5s ease 0.4s;
+		-webkit-transition: all 0.5s ease 0.4s;
+		-moz-transition: all 0.5s ease 0.4s;
+		-ms-transition: all 0.5s ease 0.4s;
+		-o-transition: all 0.5s ease 0.4s;
+	}
+	.nav-links li:nth-child(3) {
+		transition: all 0.5s ease 0.6s;
+		-webkit-transition: all 0.5s ease 0.6s;
+		-moz-transition: all 0.5s ease 0.6s;
+		-ms-transition: all 0.5s ease 0.6s;
+		-o-transition: all 0.5s ease 0.6s;
+	}
+	.nav-links li:nth-child(4) {
+		transition: all 0.5s ease 0.7s;
+		-webkit-transition: all 0.5s ease 0.7s;
+		-moz-transition: all 0.5s ease 0.7s;
+		-ms-transition: all 0.5s ease 0.7s;
+		-o-transition: all 0.5s ease 0.7s;
+	}
+	.nav-links li:nth-child(5) {
+		transition: all 0.5s ease 0.8s;
+		-webkit-transition: all 0.5s ease 0.8s;
+		-moz-transition: all 0.5s ease 0.8s;
+		-ms-transition: all 0.5s ease 0.8s;
+		-o-transition: all 0.5s ease 0.8s;
+	}
+	.nav-links li:nth-child(6) {
+		margin: 0px;
+		transition: all 0.5s ease 0.9s;
+		-webkit-transition: all 0.5s ease 0.9s;
+		-moz-transition: all 0.5s ease 0.9s;
+		-ms-transition: all 0.5s ease 0.9s;
+		-o-transition: all 0.5s ease 0.9s;
+	}
+	.nav-links li:nth-child(7) {
+		margin: 0px;
+		transition: all 0.5s ease 1s;
+		-webkit-transition: all 0.5s ease 1s;
+		-moz-transition: all 0.5s ease 1s;
+		-ms-transition: all 0.5s ease 1s;
+		-o-transition: all 0.5s ease 1s;
+	}
+	.nav-links li a {
+		font-size: 1.4rem;
+		display: inline-block;
+		padding: 1rem 0px;
+		color: rgb(242, 245, 247) !important;
+	}
+	li.fade {
+		opacity: 1 !important;
+	}
+	.nav-links li .buttons-container .global_btn {
+		font-size: 1.2rem;
+		display: flex;
+		justify-content: center;
+		margin: 1rem 0px !important;
+		text-align: center !important;
+	}
+}
+
+.toggle .line1 {
+	transform: rotate(-45deg) translate(-5px, 6px);
+	-webkit-transform: rotate(-45deg) translate(-5px, 6px);
+	-moz-transform: rotate(-45deg) translate(-5px, 6px);
+	-ms-transform: rotate(-45deg) translate(-5px, 6px);
+	-o-transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+	width: 0px;
+	transition: all 0.7s ease 0s;
+	-webkit-transition: all 0.7s ease 0s;
+	-moz-transition: all 0.7s ease 0s;
+	-ms-transition: all 0.7s ease 0s;
+	-o-transition: all 0.7s ease 0s;
+}
+
+.toggle .line3 {
+	transform: rotate(45deg) translate(-5px, -6px);
+	-webkit-transform: rotate(45deg) translate(-5px, -6px);
+	-moz-transform: rotate(45deg) translate(-5px, -6px);
+	-ms-transform: rotate(45deg) translate(-5px, -6px);
+	-o-transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media screen and (max-width:300px) {
+	.logo .logo_text {
+		font-size: 1.2rem;
+	}
+	.hamburger div {
+		width: 2rem;
+		height: 0.1rem;
+	}
+}
+
+
+/* 
+---------------------------------------------
+header  styles
+--------------------------------------------- 
+*/
+
+
+/* 
+---------------------------------------------
+start home Page css
+--------------------------------------------- 
+*/
+
+
+/* 
+---------------------------------------------
+cydog banner css
+--------------------------------------------- 
+*/
+
+#cydog_banner_area {
+	background: linear-gradient(116deg, rgb(38, 99, 209), rgb(38, 99, 209), rgb(38, 99, 209));
+	padding: 24rem 0 6rem 0;
+	position: relative;
+}
+
+#cydog_banner_area h1 {
+	text-transform: capitalize;
+	font-size: 5rem;
+	font-weight: 600;
+}
+
+#cydog_banner_area .short_info {
+	font-size: 2.3rem;
+	font-weight: 500;
+}
+
+#cydog_banner_area .cydog_dhasboard,
+#cydog_banner_area .cydog_search_bar {
+	margin-top: 7rem;
+}
+
+#cydog_banner_area .waves_ {
+	position: absolute;
+	width: 100%;
+	height: 12rem;
+	bottom: -12rem;
+}
+
+
+/* responsive css */
+
+@media screen and (max-width: 768px) {
+	#cydog_banner_area {
+		padding-top: 16rem;
+	}
+	#cydog_banner_area h1 {
+		font-size: 4rem;
+	}
+	#cydog_banner_area .cydog_dhasboard,
+	#cydog_banner_area .cydog_search_bar {
+		width: 23rem;
+		margin-top: 7rem;
+	}
+	#cydog_banner_area .waves_ {
+		bottom: -11.8rem;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	#cydog_banner_area h1 {
+		font-size: 3rem;
+	}
+	#cydog_banner_area .short_info {
+		font-size: 1.6rem;
+		line-height: 1.2;
+	}
+	#cydog_banner_area .cydog_dhasboard,
+	#cydog_banner_area .cydog_search_bar {
+		width: 20rem;
+	}
+}
+
+@media screen and (max-width:300px) {
+	#cydog_banner_area .cydog_dhasboard,
+	#cydog_banner_area .cydog_search_bar {
+		width: 10rem;
+	}
+}
+
+
+/* 
+---------------------------------------------
+cydog banner css
+--------------------------------------------- 
+*/
+
+
+/* 
+---------------------------------------------
+why cydog browser css
+--------------------------------------------- 
+*/
+
+#why_cydog_browser {
+	padding: 12rem 0 5rem 0;
+	background: #000000;
+	position: relative;
+}
+
+#why_cydog_browser .slider_top_waves {
+	top: 0;
+}
+
+#why_cydog_browser h2 {
+	margin-bottom: 3rem;
+}
+
+.slick-next {
+	right: -1rem;
+	display: none !important;
+}
+
+.slick-prev {
+	left: -2rem;
+	display: none !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+	font-size: 3.2rem !important;
+}
+
+.slick-dots li button:before {
+	font-size: 1.4rem !important;
+}
+
+#why_cydog_browser .card {
+	height: 34.0rem !important;
+	background-color: #97b9de;
+	background-image: linear-gradient( 145deg, #1b2137, #2663d1);
+	box-shadow: 0 .2rem .4rem 0 rgb(136 144 195 / 20%), 0 5px 1.5rem 0 rgb(37 44 97 / 15%);
+	border-radius: 1.5rem;
+	margin: 0 1rem;
+	border-radius: .7rem;
+	text-align: center;
+	transition: transform 0.2s;
+}
+
+#why_cydog_browser .card:hover {
+	transform: scale(0.99);
+	color: #fff;
+	z-index: 9;
+	background-color: #97b9de;
+	background-image: linear-gradient( 145deg, #1b2137, #354069);
+	-webkit-transform: scale(0.99);
+	-moz-transform: scale(0.99);
+	-ms-transform: scale(0.99);
+	-o-transform: scale(0.99);
+}
+
+#why_cydog_browser .template-demo {
+	padding: 2rem 0;
+}
+
+#why_cydog_browser .card .template-demo .cydog_security_info_img {
+	width: 8rem;
+	margin-bottom: 1rem;
+	opacity: 0.7;
+}
+
+#why_cydog_browser .card .template-demo .cydog_security_title {
+	color: #fff;
+	font-size: 2.6rem;
+	font-family: 'Poppins', sans-serif;
+}
+
+#why_cydog_browser .card .template-demo .cydog_security_short_info {
+	color: #e9ecf5c7;
+	font-size: 1.3rem;
+	margin-top: 1rem;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 200;
+	line-height: 1.5;
+}
+
+#why_cydog_browser .slider_waves {
+	position: absolute;
+}
+
+
+/* responsive css */
+
+@media screen and (max-width: 576px) {
+	#why_cydog_browser {
+		padding-bottom: 1rem;
+	}
+	#why_cydog_browser .card {
+		height: 23.1rem !important;
+	}
+	#why_cydog_browser .card .template-demo .cydog_security_title {
+		font-size: 1.9rem;
+	}
+	#why_cydog_browser .card .template-demo .cydog_security_short_info {
+		font-size: 1.4rem;
+		line-height: 1.7rem;
+	}
+	#why_cydog_browser .card .template-demo .cydog_security_info_img {
+		width: 4rem;
+	}
+}
+
+@media only screen and (max-width: 325px) {
+	#why_cydog_browser .card .template-demo .cydog_security_short_info {
+		font-size: .9rem !important;
+	}
+}
+
+
+/* 
+---------------------------------------------
+why cydog browser css
+--------------------------------------------- 
+*/
+
+
+/* 
+---------------------------------------------
+cydog browser presentation
+--------------------------------------------- 
+*/
+
+#cydog_presentation {
+	padding: 8rem 0 4rem 0;
+	background: #2663D1;
+	position: relative;
+}
+
+#cydog_presentation .presentation_top_waves {
+	top: 0;
+}
+
+#cydog_presentation h2 {
+	color: rgb(241 236 236);
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 0rem;
+	font-size: 3.6rem;
+	padding-top: 2rem;
+}
+
+#cydog_presentation h2::after {
+	content: "";
+	display: block;
+	width: 20rem;
+	height: .2rem;
+	background: #080808;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1rem;
+}
+
+#cydog_presentation .mini_short_info {
+	padding-top: 12rem;
+}
+
+#cydog_presentation .mini_short_info h3 {
+	font-size: 3.4rem;
+	font-weight: 400 !important;
+}
+
+#cydog_presentation .mini_short_info p {
+	margin-top: 2rem;
+	font-size: 1.3rem;
+	width: 55%;
+}
+
+#cydog_presentation iframe {
+	width: 80% !important;
+	margin-top: 3rem;
+	border-radius: .6rem;
+	-webkit-border-radius: .6rem;
+	-moz-border-radius: .6rem;
+	-ms-border-radius: .6rem;
+	-o-border-radius: .6rem;
+}
+
+@media screen and (max-width: 768px) {
+	#cydog_presentation iframe {
+		height: 35rem;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	#cydog_presentation iframe {
+		margin-bottom: 1rem;
+	}
+}
+
+
+/* 
+---------------------------------------------
+cydog browser presentation
+--------------------------------------------- 
+*/
+
+
+/* 
+---------------------------------------------
+cydog browser security
+--------------------------------------------- 
+*/
+
+#cydog_security {
+	background-color: #2663D1;
+	text-align: center;
+}
+
+#cydog_security .cydog_browser_big_img .head_cydog_img {
+	margin-bottom: 1rem;
+}
+
+#cydog_security .security_small_info img {
+	width: 80rem;
+	max-width: 100%;
+}
+
+
+/* 
+---------------------------------------------
+cydog browser security
+--------------------------------------------- 
+*/
+
+
+/* 
+---------------------------------------------
+cydog browser comparison
+--------------------------------------------- 
+*/
+
+#cydog_comparison_chart {
+	padding: 12rem 0 6rem 0;
+	font-family: 'Poppins', sans-serif;
+	position: relative;
+}
+
+#cydog_comparison_chart .waves {
+	top: 0;
+}
+
+#cydog_comparison_chart h3 {
+	font-size: 3.5rem;
+	text-align: center;
+}
+
+#cydog_comparison_chart .cydog_proection_info ul {
+	margin-top: 3rem;
+}
+
+#cydog_comparison_chart .cydog_proection_info ul li {
+	display: inline-block;
+	margin-left: 2rem;
+	font-size: 1.4rem;
+}
+
+#cydog_comparison_chart .cydog_proection_info ul li img {
+	background-color: #2663d1;
+	border-radius: 5rem;
+	width: 2.3rem;
+}
+
+#cydog_comparison_chart .comparison_chart {
+	margin-top: 4rem;
+	padding: 5rem;
+	background: rgb(10 22 42);
+	border-radius: 2rem;
+}
+
+#cydog_comparison_chart .comparison_chart .shadow {
+	background: #000;
+	border-radius: 1rem;
+}
+
+#cydog_comparison_chart .comparison_chart h4 {
+	font-size: 1.7rem;
+	margin-top: 2rem;
+}
+
+#cydog_comparison_chart .comparison_chart img {
+	width: 5.4rem;
+	height: 5rem;
+}
+
+#cydog_comparison_chart .comparison_chart .built_feature {
+	font-size: 1.9rem;
+	font-weight: 300;
+	margin-top: 3.3rem;
+}
+
+#cydog_comparison_chart .comparison_chart .add_blocker {
+	width: 3.5rem;
+}
+
+@media screen and (max-width:768px) {
+	#cydog_comparison_chart .comparison_chart h4,
+	#cydog_comparison_chart .comparison_chart .built_feature {
+		text-align: center !important;
+		font-size: 1.4rem;
+	}
+}
+
+@media screen and (max-width:576px) {
+	#cydog_comparison_chart .comparison_chart {
+		margin-top: 0;
+	}
+	#cydog_comparison_chart .cydog_proection_info {
+		display: flex;
+		justify-content: center;
+	}
+	#cydog_comparison_chart .cydog_proection_info ul {
+		display: flex;
+		flex-direction: column;
+	}
+	#cydog_comparison_chart .cydog_proection_info ul li {
+		display: inherit;
+		margin-bottom: 1.2rem;
+	}
+	#cydog_comparison_chart h3 {
+		font-size: 2rem;
+	}
+}
+
+@media screen and (max-width:410px) {
+	#cydog_comparison_chart .comparison_chart {
+		padding: 1rem;
+	}
+	#cydog_comparison_chart .comparison_chart img {
+		width: 3.4rem;
+		height: 3rem;
+	}
+	#cydog_comparison_chart .comparison_chart h5 {
+		margin-top: .8rem;
+	}
+	#cydog_comparison_chart .comparison_chart h5 {
+		font-size: 1rem;
+	}
+}
+
+
+/* 
+---------------------------------------------
+cydog browser comparison
+--------------------------------------------- 
+*/
+
+
+/* 
+---------------------------------------------
+cydog browser advanced css
+--------------------------------------------- 
+*/
+
+#scydog_advanced_security {
+	padding: 5rem 0 4rem;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+}
+
+#scydog_advanced_security p {
+	font-size: 1.6rem;
+	width: 60%;
+	margin: 2rem auto;
+}
+
+#scydog_advanced_security img {
+	width: 24rem;
+}
+
+#scydog_advanced_security .advancded_short_info {
+	margin-top: 3.5rem;
+}
+
+#scydog_advanced_security .advancded_short_info h3 {
+	font-size: 1.6rem;
+}
+
+#scydog_advanced_security .advancded_short_info p {
+	font-size: 1.2rem;
+	width: 100%;
+	font-weight: 200;
+}
+
+@media screen and (max-width:576px) {
+	#scydog_advanced_security p {
+		font-size: 1.3rem;
+		width: 100%;
+	}
+	#scydog_advanced_security img {
+		width: 20rem;
+	}
+}
+
+@media screen and (max-width:300px) {
+	#scydog_advanced_security img {
+		width: 10rem;
+	}
+}
+
+
+/* 
+---------------------------------------------
+cydog browser advanced css
+--------------------------------------------- 
+*/
+
+
+/* 
+---------------------------------------------
+cydog browser downloaded people
+--------------------------------------------- 
+*/
+
+#cydog_brower_download {
+	padding: 2rem 0 4rem 0;
+}
+
+#cydog_brower_download h1 {
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	font-size: 3.6rem;
+}
+
+#cydog_brower_download .buttons-container .down_btn {
+	background: #0a43ad !important;
+}
+
+#cydog_brower_download .buttons-container .down_btn:hover {
+	background: linear-gradient(to right, cornflowerblue, aqua, deeppink, cornflowerblue) 0% 0% / 600% 600% !important;
+	animation: 20s linear 0s infinite normal none running gradient;
+}
+
+@media screen and (max-width:576px) {
+	#cydog_brower_download h1 {
+		font-size: 2rem;
+	}
+}
+
+
+/* 
+---------------------------------------------
+cydog browser downloaded people
+--------------------------------------------- 
+*/
+
+
+/* 
+---------------------------------------------
+end home Page css
+--------------------------------------------- 
+*/
+
+
+/* 
+---------------------------------------------
+start about us page css
+--------------------------------------------- 
+*/
+
+
+/* 
+---------------------------------------------
+
+--------------------------------------------- 
+*/
+
+
+/* 
+---------------------------------------------
+cydog banner css
+--------------------------------------------- 
+*/
+
+#cydog_exploration_banner {
+	padding: 8rem 0 11rem;
+	background: #2663D1;
+}
+
+#cydog_exploration_banner img {
+	width: 65rem;
+	max-width: 100%;
+}
+
+
+/* 
+---------------------------------------------
+cydog banner css
+--------------------------------------------- 
+*/
+
+
+/* 
+---------------------------------------------
+cydog about us css
+--------------------------------------------- 
+*/
+
+#about_cydog {
+	padding: 7rem 0 3rem 0;
+	font-family: 'Poppins', sans-serif;
+	background: #020202;
+}
+
+#about_cydog h2 {
+	font-family: changa;
+}
+
+#about_cydog .left_cydog {
+	padding-top: 6rem;
+}
+
+#about_cydog .left_cydog img {
+	width: 38rem;
+	max-width: 100%;
+}
+
+#about_cydog .right_cydog {
+	padding-top: 7rem;
+}
+
+#about_cydog .right_cydog img {
+	width: 34rem;
+	max-width: 100%;
+}
+
+#about_cydog .about_us_short_info {
+	padding-top: 11rem;
+}
+
+#about_cydog .about_us_short_info h3 {
+	font-size: 2.7rem;
+}
+
+#about_cydog .about_us_short_info p {
+	font-weight: 300;
+	font-size: 1.5rem;
+	margin-top: 2rem;
+}
+
+@media screen and (max-width:768px) {
+	#about_cydog .left_cydog {
+		padding-top: 0;
+	}
+	#about_cydog .about_us_short_info {
+		padding-top: 0;
+		margin-top: -2rem;
+	}
+	#about_cydog .right_cydog {
+		padding-top: 0;
+	}
+}
+
+@media screen and (max-width:576px) {
+	#about_cydog .about_us_short_info h3 {
+		font-size: 1.6rem;
+	}
+	#about_cydog .about_us_short_info p {
+		font-size: 1.3rem;
+	}
+}
+
+
+/* 
+---------------------------------------------
+cydog about us css
+--------------------------------------------- 
+*/
+
+
+/* 
+---------------------------------------------
+cydog popup us css
+--------------------------------------------- 
+*/
+
+.about_us {
+	background: #2663D1;
+	width: 100%;
+	padding-bottom: 4rem;
+	padding-top: 6rem;
+}
+
+.about_us .graphics {
+	width: 15%;
+	text-align: center;
+	margin-left: 42.5%;
+	margin-right: 42.5%;
+}
+
+.about_us .modal_of {
+	margin-top: 4rem;
+	padding-top: 4rem;
+	padding-left: 13%;
+	background: #000;
+	box-shadow: -1px 26px 19px -2px rgba(0, 0, 0, 0.91);
+	-webkit-box-shadow: -1px 13px 19px -2px rgb(9 12 18 / 91%);
+	-moz-box-shadow: -1px 26px 19px -2px rgba(0, 0, 0, 0.91);
+	border-radius: 2rem;
+}
+
+.about_us .modal_img {
+	width: 3.7rem;
+	height: 4.3rem;
+	cursor: pointer;
+}
+
+.about_us .modal_of .learn-more {
+	font-size: 2.1rem;
+	line-height: 1.4rem;
+	color: #fff !important;
+}
+
+.about_us .marqueee marquee {
+	font-size: 2.3rem;
+	color: #f5f5f5 !important;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 20px 0;
+	line-height: 0;
+}
+
+.title h3 {
+	font-weight: 300;
+	font-size: 2.5rem;
+	margin-top: 2.5rem;
+	color: #3C4858;
+}
+
+.modal p {
+	color: #fff !important;
+}
+
+.modal-dialog .modal-content {
+	-webkit-box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
+	box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
+	border-radius: 6px;
+	border: none;
+	background: #2663D1 !important;
+}
+
+.modal-dialog .modal-content p {
+	color: #f1e9e9 !important;
+	font-weight: 300;
+	font-size: 1.2rem;
+	font-family: 'Poppins';
+}
+
+.modal-dialog .modal-header {
+	border-bottom: none;
+	padding-top: 2.3rem;
+	padding-right: 2.4rem;
+	padding-bottom: 0;
+	padding-left: 2.4rem;
+}
+
+.modal-dialog .modal-header .modal-title {
+	font-size: 1.7rem;
+	font-weight: 300;
+	color: #3C4858;
+	margin-bottom: 0;
+	margin-top: 1rem;
+	line-height: 1.5;
+}
+
+.modal-dialog .modal-body {
+	padding-top: 2.4rem;
+	padding-right: 2.4rem;
+	padding-bottom: 1.6rem;
+	padding-left: 2.4rem;
+	color: #3C4858;
+}
+
+.modal .modal-header .close i {
+	font-size: 1.6rem;
+	color: #999;
+}
+
+.modal-dialog .modal-footer {
+	border-top: none;
+	padding: 2.4rem !important;
+}
+
+.modal-dialog .modal-body+.modal-footer {
+	padding-top: 0 !important;
+}
+
+.modal-dialog .modal-footer button {
+	margin: 0 !important;
+	padding-left: 1.6rem !important;
+	padding-right: 1.6rem !important;
+	width: auto;
+}
+
+.modal-dialog .modal-content .card-signup .modal-header {
+	padding-top: 0;
+}
+
+.card .card-title {
+	color: #fff;
+	font-size: 1.8rem !important;
+	font-weight: 700 !important;
+	font-family: Roboto Slab, Times New Roman, serif;
+	margin-top: 1rem;
+}
+
+.card .card-header {
+	border-radius: 3px !important;
+	padding: 1rem 1.5rem;
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+	margin-top: -3rem;
+	border: 0;
+	-webkit-border-radius: 3px !important;
+	-moz-border-radius: 3px !important;
+	-ms-border-radius: 3px !important;
+	-o-border-radius: 3px !important;
+}
+
+.card .card-header-primary {
+	-webkit-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .2), 0 13px 24px -11px rgba(156, 39, 176, .6);
+	box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .2), 0 13px 24px -11px rgba(156, 39, 176, .6);
+	background: -o-linear-gradient(30deg, #ab47bc, #7b1fa2);
+	background: linear-gradient(60deg, #ab47bc, #7b1fa2)
+}
+
+.card-plain .card-body {
+	padding-left: .5rem !important;
+	padding-right: .5rem !important;
+}
+
+.card .card-body {
+	padding: 1.5rem;
+}
+
+.card form {
+	margin: 0;
+}
+
+.modal-dialog .modal-body {
+	padding: 1.3rem 2.4rem 1.6rem;
+}
+
+.modal-dialog .modal-footer button {
+	color: #fff;
+	margin: 0;
+	padding-left: 1.6rem;
+	padding-right: 1.6rem;
+	width: auto;
+	border: none;
+	text-decoration: none;
+}
+
+.modal-dialog .modal-footer button a {
+	text-decoration: none;
+	color: #fff !important;
+}
+
+@media screen and (max-width:768px) {
+	.about_us .modal_of .flex-row {
+		-webkit-box-orient: vertical !important;
+		-webkit-box-direction: normal !important;
+		-ms-flex-direction: column !important;
+		flex-direction: column !important;
+		text-align: center !important;
+	}
+	.about_us p {
+		text-align: center !important;
+	}
+	.about_us .modal_of {
+		padding-left: 0 !important;
+	}
+}
+
+
+/* 
+---------------------------------------------
+cydog popup us css
+--------------------------------------------- 
+*/
+
+
+/* 
+---------------------------------------------
+cydog press download us css
+--------------------------------------------- 
+*/
+
+#downLoad_press {
+	padding: 4rem 4rem;
+	font-family: 'Poppins', sans-serif;
+	background: #2663d1;
+}
+
+#downLoad_press h3 {
+	font-size: 2.6rem;
+}
+
+#downLoad_press p {
+	font-size: 1.3rem;
+	margin-top: 2rem;
+}
+
+#downLoad_press .text-black {
+	color: #000 !important;
+	text-decoration: underline;
+}
+
+#downLoad_press .buttons-container .banner_btn_download .fa-download {
+	right: 6rem;
+}
+
+
+/* 
+---------------------------------------------
+cydog press download us css
+--------------------------------------------- 
+*/
+
+
+/* 
+---------------------------------------------
+
+end about us page css
+--------------------------------------------- 
+*/
+
+
+/* 
+---------------------------------------------
+
+start cydog search  page css
+--------------------------------------------- 
+*/
+
+#search_engine {
+	padding: 26rem 0 22rem 0 !important;
+	text-align: center;
+}
+
+#search_engine .cydogbrowser_intensifies_img {
+	margin-bottom: 2rem;
+	width: 17rem;
+	max-width: 100%;
+}
+
+#search_engine .searchInt {
+	background: transparent;
+	width: 43% !important;
+	flex: none !important;
+	border: 0;
+	border-radius: 0px;
+	border-bottom: 1px solid rgb(255, 255, 255);
+	border-bottom-left-radius: 10px;
+	border-top: 1px solid rgb(255, 255, 255);
+	border-top-left-radius: 10px;
+	box-shadow: 0px 5px 2px rgb(31, 31, 31);
+	transition: width 1s;
+	font-size: 1.6rem;
+}
+
+#search_engine .searchInt::placeholder {
+	color: white;
+}
+
+#search_engine .searchBtn {
+	box-shadow: 0px 5px 2px rgb(31, 31, 31);
+	z-index: 2;
+	border: 0;
+	border-top: 1px solid rgb(255, 255, 255);
+	border-top-left-radius: 10px;
+	border-bottom: 1px solid rgb(255, 255, 255);
+	border-radius: 0px;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+#search_engine .fa-search {
+	transform: rotateY(180deg);
+	font-size: 1.7rem;
+	color: white;
+}
+
+#search_engine .loadSpan1 {
+	font-size: 2rem;
+	font-family: 'changa', sans-serif;
+	color: #0e0d0e;
+}
+
+#search_engine .loadSpan2 {
+	font-size: 2rem;
+	font-family: 'changa', sans-serif;
+	color: #0e0d0e;
+}
+
+#search_engine .loadSpan3 {
+	font-size: 2rem;
+	font-family: 'changa', sans-serif;
+	color: #141516;
+}
+
+#search_engine .searchInt:focus {
+	color: white;
+	background: transparent;
+	width: 80% !important;
+	border-bottom: 1px solid rgb(255, 255, 255);
+	box-shadow: 0px 5px 2px rgb(31, 31, 31);
+}
+
+#search_engine .loadImg {
+	width: 3rem;
+}
+
+#search_engine .loading {
+	display: none;
+}
+
+#search_engine .default_search .new_img {
+	width: 4rem;
+}
+
+#search_engine .default_search a {
+	color: #fff;
+	font-size: 1.7rem;
+	display: inline-block;
+	margin-top: 3rem;
+}
+
+@media screen and (max-width:768px) {
+	#search_engine .searchInt {
+		width: 50% !important;
+	}
+}
+
+@media screen and (max-width:576px) {
+	#search_engine {
+		padding: 17rem 0 5rem 0 !important;
+	}
+}
+
+@media screen and (max-width:320px) {
+	#search_engine {
+		padding: 15rem 0 5rem 0 !important;
+	}
+	#search_engine .searchInt {
+		font-size: .8rem;
+	}
+	#search_engine .searchBtn {
+		height: 2.2rem;
+	}
+	#search_engine .fa-search {
+		font-size: .7rem;
+	}
+}
+
+
+/* 
+---------------------------------------------
+
+end cydog search page css
+--------------------------------------------- 
+*/
+
+
+/* 
+---------------------------------------------
+
+start cydog test  page css
+--------------------------------------------- 
+*/
+
+#cydog_test {
+	padding: 23rem 0 10rem;
+	background-color: #2663D1;
+}
+
+#cydog_test table {
+	background: #000;
+	border-radius: 1.2rem;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+#cydog_test table tr {
+	border-top: 1px solid #1d1e1e;
+}
+
+#cydog_test table tr td {
+	font-size: 1.3rem;
+	padding: 1rem 4rem;
+}
+
+#cydog_test table tr td img {
+	width: 10rem !important;
+}
+
+#cydog_test table tr td a {
+	color: #fff;
+}
+
+#cydog_test table tr:first-child {
+	border-top: none !important;
+}
+
+#cydog_test table tr td input {
+	width: 100%;
+	background-color: #000;
+	padding: 1rem 2rem;
+	box-sizing: border-box;
+	margin: .7rem 0;
+	font-size: 1.3rem;
+	border: .2rem solid #2663d1;
+	border-radius: 1.2rem;
+}
+
+@media screen and (max-width:576px) {
+	#cydog_test table {
+		width: 74%;
+	}
+	#cydog_test table h1 {
+		font-size: 1.5rem;
+	}
+	#cydog_test table tr td img {
+		width: 6rem !important;
+	}
+	#cydog_test table tr td {
+		font-size: .9rem;
+		padding: 1rem 1rem;
+	}
+	#cydog_test table tr td input {
+		font-size: .9rem;
+		padding: .3rem .8rem;
+		border-radius: .4rem;
+	}
+}
+
+
+/* 
+---------------------------------------------
+
+start cydog test  page css
+--------------------------------------------- 
+*/
+
+
+/* 
+---------------------------------------------
+
+our platform page css
+--------------------------------------------- 
+*/
+
+#our_platforms {
+	padding: 11rem 0 2rem 0;
+	text-align: center;
+	background: #2663d1;
+}
+
+#our_platforms img {
+	width: 51rem;
+}
+
+#our_platforms .platforms_text {
+	padding-top: 14rem;
+	padding-left: 5rem;
+}
+
+#our_platforms .platforms_text h1 {
+	font-size: 4.5rem;
+}
+
+#our_platforms .platforms_text p {
+	width: 100%;
+	font-size: 1.6rem;
+}
+
+@media screen and (max-width:768px) {
+	#our_platforms .platforms_text {
+		padding-top: 4rem;
+		padding-left: 0;
+	}
+}
+
+
+/* 
+---------------------------------------------
+
+our platform modal css
+--------------------------------------------- 
+*/
+
+#cydog_popUp_platform_info {
+	margin-top: -10rem;
+}
+
+#cydog_popUp_platform_info .font-weight-bold {
+	font-size: 1.7rem;
+	font-weight: 400 !important;
+	text-decoration: underline;
+}
+
+#cydog_popUp_platform_info .about_us {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+
+/* 
+---------------------------------------------
+
+our platform modal css
+--------------------------------------------- 
+*/
+
+
+/* 
+---------------------------------------------
+
+our platform page css
+--------------------------------------------- 
+*/
+
+
+/* 
+---------------------------------------------
+
+privacy css page css
+--------------------------------------------- 
+*/
+
+#cydog_privacy_section {
+	padding: 10rem 0;
+	background: #2663D1;
+}
+
+#cydog_privacy_section .container .wrap_privacy {
+	width: 70%;
+	max-width: 100%;
+	margin: 5rem auto 1rem auto;
+}
+
+#cydog_privacy_section .container .wrap_privacy .header_privacy_ {
+	margin: 2rem 0 7rem 0;
+}
+
+#cydog_privacy_section .header_privacy_ h1 {
+	font-size: 5.4rem;
+}
+
+#cydog_privacy_section .header_privacy_ p {
+	font-size: 1.7rem;
+}
+
+#cydog_privacy_section .container .wrap_privacy .body_privacy_info h4 {
+	font-size: 3.4rem;
+	font-weight: normal;
+	color: #adadad;
+}
+
+#cydog_privacy_section .container .wrap_privacy .body_privacy_info h6 {
+	font-size: 1.9rem;
+	margin-bottom: 1.4rem;
+}
+
+#cydog_privacy_section .container .wrap_privacy .body_privacy_info h3 {
+	font-size: 3rem;
+	font-weight: 300;
+	margin-top: 2.5rem;
+}
+
+#cydog_privacy_section .container .wrap_privacy .body_privacy_info p {
+	font-size: 1.5rem;
+}
+
+#cydog_privacy_section .container .wrap_privacy .body_privacy_info a {
+	color: #000;
+	text-decoration: underline;
+}
+
+
+/* 
+---------------------------------------------
+
+privacy css  page css
+--------------------------------------------- 
+*/
+
+
+/* 
+---------------------------------------------
+
+conditions css  page css
+--------------------------------------------- 
+*/
+
+.cydog_conditons_sections ul li {
+	font-size: 1.8rem !important;
+	list-style: initial !important;
+	padding-left: 2rem;
+}
+
+
+/* 
+---------------------------------------------
+
+conditions css  page css
+--------------------------------------------- 
+*/
+
+
+/* 
+---------------------------------------------
+footer css
+--------------------------------------------- 
+*/
+
+footer {
+	padding: 5rem 0 3rem;
+	background: #2663D1;
+}
+
+footer ul li {
+	display: inline-block;
+	margin-left: 2rem;
+	font-size: 2rem;
+}
+
+footer .social_media ul li a i {
+	font-size: 2rem;
+}
+
+footer .cydog_repository_info ul img {
+	width: 3rem;
+}
+
+footer .footer_menu {
+	text-align: center;
+}
+
+footer .footer_menu ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.3rem;
+}
+
+footer .copyright_text {
+	font-size: 1.3rem;
+}
+
+
+/* 
+---------------------------------------------
+footer css
+--------------------------------------------- 
+*/
+
+
+/* 
+---------------------------------------------
+all section responsive css
+--------------------------------------------- 
+*/
+
+
+/* responsive css */
+
+@media screen and (max-width:992px) {
+	.buttons-container .banner_btn_download a {
+		font-size: 1.4rem;
+	}
+	.buttons-container .banner_btn_download .fa-download {
+		font-size: 1.2rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.buttons-container .banner_btn_download {
+		width: 30rem;
+		margin-right: 0;
+	}
+	.banner_btn_download .fa-download {
+		right: 4rem;
+	}
+	.header_privacy_ h1 {
+		font-size: 3.2rem !important;
+	}
+	.header_privacy_ p {
+		font-size: 1.3rem !important;
+	}
+	.wrap_privacy .body_privacy_info h4 {
+		font-size: 2.4rem !important;
+	}
+	.wrap_privacy .body_privacy_info h6 {
+		font-size: 1.4rem;
+	}
+	.wrap_privacy .body_privacy_info p {
+		font-size: 1.2rem !important;
+	}
+	.cydog_conditons_sections ul li {
+		font-size: 1.2rem !important;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	h2 {
+		font-size: 2rem !important;
+	}
+}
+
+@media screen and (max-width:320px) {
+	.buttons-container .banner_btn_download {
+		font-size: 1.2rem;
+	}
+	.buttons-container .banner_btn_download .fa-download {
+		font-size: .8rem;
+		position: static;
+	}
+}
