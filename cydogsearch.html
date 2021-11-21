@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link rel="shortcut icon" type="image/jpg" href="resources/img/logo.png" />
+      <title>Cydog Search</title>
+      <!--- GOOGLE FONT -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;1,100;1,200;1,300&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+      <!--FONT AWESOME CDN-->
+      <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+      <!-- BOOTSTRAP CDN -->
+      <link href="vendors/css/bootstrap.css" rel="stylesheet">
+      <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css.map">
+      <!--  NORAMLIZE CSS -->
+      <link rel="stylesheet" href="vendor/normalize/Normalize.css">
+      <!-- MAIN CSS -->
+      <link rel="stylesheet" href="resources/css/style.css">
+   </head>
+   <body style="background-color:#2663d1; color:#101010;" onbeforecopy="return false" ondragstart="return false" onselectstart="return false" oncontextmenu="return false" onselect="document.selection.empty()" oncopy="document.selection.empty()" onload="qurySearch()">
+      <!--------- HEADER AREA ---------->
+      <header>
+         <nav>
+            <a href="#home" class="logo_link">
+               <div class="logo">
+                  <img src="./resources/img/logo.png" alt="Logo Image">
+                  <h4 class="logo_text">Cydog Browser</h4>
+               </div>
+            </a>
+            <div class="hamburger">
+               <div class="line1"></div>
+               <div class="line2"></div>
+               <div class="line3"></div>
+            </div>
+            <ul class="nav-links">
+               <li><a href="index.html" target="blank">Home</a></li>
+               <li><a href="About Us.html" target="blank">About Us</a></li>
+               <li><a href="cydogtest.html" target="blank">Cydog Test</a></li>
+               <li><a href="outplatforms.html" target="blank">Our Platforms</a></li>
+               <li>
+                  <div class="buttons-container">
+                     <a class="global_btn download_btn" href="https://play.google.com/store/apps/details?id=com.matthewbenchimol.cydogbrowser" target="blank">Download Cydog</a>
+                  </div>
+               </li>
+               <li>
+                  <div class="buttons-container">
+                     <a class="global_btn cydog_search" href="cydogsearch.html">Try Cydog Search</a>
+                  </div>
+               </li>
+            </ul>
+         </nav>
+      </header>
+      <!--------- HEADER AREA ---------->
+      <!--------- MAIN AREA ------------>
+      <main>
+         <!--------- SEARCH ENGINE ------------>
+         <section id="search_engine">
+            <div class="container">
+               <div class="row">
+                  <div class="col-12 text-center">
+                     <img src="./resources/img/cydogbrowserintensifies.png" alt="cydogbrowserintensifies" class="img-fluid cydogbrowser_intensifies_img">
+                  </div>
+                  <div class="col-12">
+                     <form role="form" id="form-buscar" method="GET" action="javascript:randomlink(document.getElementById('1').value)">
+                        <div class="input-group mb-3 main">
+                           <div class="mx-auto row col-12">
+                              <input id="1" type="text" class="form-control py-2 searchInt ml-auto"
+                                 placeholder="Search..." aria-label="Recipient's
+                                 username"
+                                 aria-describedby="basic-addon2" required >
+                              <div class="input-group-append mr-auto">
+                                 <button type="submit" class="btn btn-outline-secondary searchBtn"
+                                    type="button"><i
+                                    class="fas fa-search"></i></button>
+                              </div>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="col-12 text-center loading">
+                     <span class="loadSpan1">Cy<span class="loadSpan2">dog</span><span
+                        class="loadSpan3">Loading</span></span>
+                     <img class="loadImg" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/f1055231234507.564a1d234bfb6.gif" alt="">
+                  </div>
+                  <div class="col-12">
+                     <div class="default_search">
+                        <p><a href="#"><img src="./resources/img/new.png" alt="new" class="new_img">Set Cydog Intensifies as your default search</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!--------- SEARCH ENGINE ------------>
+      </main>
+      <!--------- MAIN AREA ------------>
+      <!---CYDOG FOOTER  -->
+      <footer>
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-6 d-flex justify-content-md-start justify-content-center">
+                  <div class="social_media">
+                     <ul>
+                        <li>Follow us</li>
+                        <li><a href="#"><i class="fa fa-github"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <hr class="bg-white">
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <div class="footer_menu">
+                     <ul>
+                        <li><a href="index.html" target="blank">Home</a></li>
+                        <li><a href="About Us.html" target="blank">About Us</a></li>
+                        <li><a href="cydogtest.html" target="blank">Cydog Test</a></li>
+                        <li><a href="outplatforms.html" target="blank">Our Platforms</a></li>
+                        <li><a href="cydogprivacy.html" target="blank">Privacy</a></li>
+                        <li><a href="cydogconditions.html" target="blank">Conditions</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-12">
+                  <p class="text-center copyright_text">Copyright 2020</p>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!---CYDOG FOOTER  -->
+      <!--------- MAIN AREA ------------>
+      <!-- Scripts -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="vendors/js/bootstrap.min.js"></script>
+      <script src="resources/js/app.js"></script>
